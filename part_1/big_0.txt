@@ -1,2 +1,75 @@
 Describes the performance of an algorithm
 
+Big 0 notation
+
+nums = []
+
+Big 0(1)
+nums[0]
+
+Doesn’t matter how big the array is,
+It will always return index 0 - it’s  a constant
+Runs in constant time
+
+nums[0]
+nums[1]
+
+This is 0(2) - but as they are both 0(1), it can be 0(1) as they are both in constant time
+
+Big 0(n)
+
+i = 0
+while i < len(nums):
+ 	i+=
+        print(i)
+
+This grow linearly and in direct correlation to the size of the input - nums could be any size
+0(n)
+As n grows, the cost of the algorithm grows
+
+Loops run in linear time - 0(n)
+
+0(n^2) - slower than 0(n)
+Example -  nested loops
+This is quadratic time
+
+Big 0(log n)
+Logarithmic groth
+More efficient and scalable than algorithm that runs in linear time
+
+Sorted list
+nums[1,2,3,4,5,6,7,8,9,10]
+
+Find 10
+Linear search 0(n) Loop through and stop when you reach 10
+
+Binary search - if the middle element is smaller than the value we’re looking for
+Then we know the target isn’t in the left half, so it must be in the right
+Again now look at the middle of the right partition -  smaller or greater than the target value?
+8 is smaller so we’re left with 9,10.
+
+1,2,3,4,5,6,7,8,9,10
+6,7,8,9,10
+9,10
+10
+
+This will find the target of 1m items in 19 comparisons
+Algorithm with logarithmic Time is more scalable than one linear time
+
+
+Big 0(2^n) -  0(2 to the power n)
+Exponential
+Not scalable at all
+Opposite of logarithmic
+
+
+Fastest - slowest
+Constant 	0(1)
+Logarithmic 0(Log n)
+linear	0(n)
+Quadratic	0(n^2)
+Exponential	0(2^n)
+
+SPACE COMPLEXITY
+
+How much space an algorithm requires
