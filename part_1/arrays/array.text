@@ -1,0 +1,10 @@
+elements in a array ge stored sequentially in memory
+
+looking up an array by index is 0(1)
+
+if you need to store a list of items and find by index, arrays are the optimal data structure
+
+Deletion is a 0(n) operation
+
+if you have to remove or add a lot of items in an array, they dont perform well - use linked lists
+

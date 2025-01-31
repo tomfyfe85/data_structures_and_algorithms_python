@@ -34,7 +34,7 @@ Example -  nested loops
 This is quadratic time
 
 Big 0(log n)
-Logarithmic groth
+Logarithmic growth
 More efficient and scalable than algorithm that runs in linear time
 
 Sorted list
