@@ -1,0 +1,21 @@
+Linked lists are comprised of a series of nodes\
+each n ode hold two pieces of data
+
+NODE
+1      2
+value  address of next node
+
+each node points to or references the next node on the list
+first node is the head
+last  is the tail
+
+Lookup
+by value: 0(n)
+By index  0(n)
+
+Insert
+At the end : 0(1)
+Beginning : 0(1)
+middle: 0(n)
+
+Delete
