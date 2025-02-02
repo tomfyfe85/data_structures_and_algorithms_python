@@ -18,4 +18,4 @@ At the end : 0(1)
 Beginning : 0(1)
 middle: 0(n)
 
-Delete
+
