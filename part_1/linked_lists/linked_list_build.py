@@ -1,6 +1,3 @@
-#
-
-
 class Node:
 	def __init__(self, data):
 		self.data = data
@@ -16,25 +13,29 @@ class LinkedList:
 		new_node.next = self.first
 		self.first = new_node
 
+		if not self.last:
+			self.last = new_node
+
 	def add_last(self, data):
 		new_node = Node(data)
 
 		if not self.first:
-			self.first = new_node
+			self.first = self.last = new_node
 		else:
 			current = self.first
 
 			while current.next:
 				current = current.next
 			current.next = new_node
-			self.last = current.next
+			self.last = new_node
 
 	def delete_first(self):
 		if not self.first:
 			print('list empty')
 			return
+
 		if not self.first.next:
-			self.first = None
+			self.first = self.last = None
 		else:
 			self.first = self.first.next
 
@@ -42,10 +43,11 @@ class LinkedList:
 		if not self.first:
 			print('list empty')
 			return
+
 		if not self.first.next:
-			self.first = None
-			self.last = None
+			self.first = self.last = None
 			return
+
 		current = self.first
 		while current.next.next:
 			current = current.next
@@ -60,7 +62,6 @@ class LinkedList:
 				return True
 			current = current.next
 		print("false")
-
 		return False
 
 	def	index_of(self, item):
@@ -70,13 +71,10 @@ class LinkedList:
 			if current.data == item:
 				print(i)
 				return
-
-			if current.data != item and current.next is None:
-				print("item not found")
-
 			current = current.next
 			i += 1
 
+		print("item not found")
 
 
 
@@ -86,7 +84,5 @@ ll.add_last(2)
 ll.add_last(3)
 ll.add_last(4)
 
-
 ll.index_of(4)
-
 ll.index_of(10)
