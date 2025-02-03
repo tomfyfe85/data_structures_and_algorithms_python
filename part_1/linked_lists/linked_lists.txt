@@ -19,3 +19,24 @@ Beginning : 0(1)
 middle: 0(n)
 
 
+DIFFERENCE BETWEEN ARRAYS AND LINKED LISTS
+Dynamic arrays grow 50%-100%
+Linked lists don't waste memory
+
+I you know roughly how many items you have to store before hand, use a list
+
+Searching by index
+Arrays 0(1)
+LL 0(n)
+
+Looking up by value
+Arrays 0(n)
+LL 0(n)
+
+Insert Beginning/end/middle
+Array 0(n)/0(n)/0(n)
+LL 0(1)/0(1)/0(n)
+
+Delete Beginning/middle/end
+Array 0(n)/0(n)/0(n)
+LL 0(1)/0(n)/0(n)
