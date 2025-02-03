@@ -1,3 +1,6 @@
+from operator import indexOf
+
+
 class Node:
 	def __init__(self, data):
 		self.data = data
@@ -8,7 +11,7 @@ class LinkedList:
 		self.first = None
 		self.last = None
 
-	def add_first(self, data):
+	def add_first(self, data: int):
 		new_node = Node(data)
 		new_node.next = self.first
 		self.first = new_node
@@ -16,7 +19,7 @@ class LinkedList:
 		if not self.last:
 			self.last = new_node
 
-	def add_last(self, data):
+	def add_last(self, data: int):
 		new_node = Node(data)
 
 		if not self.first:
@@ -54,7 +57,7 @@ class LinkedList:
 		self.last = current
 		current.next = None
 
-	def contains(self, item):
+	def contains(self, item: int):
 		current = self.first
 		while current:
 			if current.data == item:
@@ -69,8 +72,7 @@ class LinkedList:
 		i = 0
 		while current:
 			if current.data == item:
-				print(i)
-				return
+				return i
 			current = current.next
 			i += 1
 
@@ -99,14 +101,18 @@ class LinkedList:
 			current = current.next
 		return result
 
+	def get_kth_from_the_end(self, k: int ):
+# 		declare two pointers
+#		one starts from the beginning of the list (p1)
+#		next one starts k -1 from the beginning (p2)
+#		when p1 reaches the end node - give the position of p2
+		pass
+
 ll = LinkedList()
-ll.add_last(1)
-ll.add_last(2)
-ll.add_last(3)
-ll.add_last(4)
+ll.add_last(10)
+ll.add_last(20)
+ll.add_last(30)
+ll.add_last(40)
+ll.add_last(50)
 
-print(ll.show_list())
-
-ll.reverse()
-
-print(ll.show_list())
+print(ll.get_kth_from_the_end(1))
