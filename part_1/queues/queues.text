@@ -1,0 +1,46 @@
+FIRST IN FIST OUT
+FIFO
+
+enqueue - add item at the front
+dequeue - remove items at the back
+peek - get item at the front with out removing it
+isEmpty
+isFull
+
+all O(1)
+
+use:
+from collections import deque
+
+q = deque()
+q.append(1)  # Add to the right (end)
+q.append(2)
+print(q.popleft())
+
+methods:
+append(x): Add x to the right end.
+
+appendleft(x): Add x to the left end.
+
+extend(iterable): Add all elements from iterable to the right end.
+
+extendleft(iterable): Add all elements from iterable to the left end (in reverse order).
+
+pop(): Remove and return the element from the right end.
+
+popleft(): Remove and return the element from the left end.
+
+clear(): Remove all elements from the deque.
+
+rotate(n): Rotate the deque n steps to the right (negative n rotates left).
+
+count(x): Count occurrences of x in the deque.
+
+remove(x): Remove the first occurrence of x.
+
+index(x): Return the index of the first occurrence of x.
+
+copy(): Create a shallow copy of the deque.
+
+maxlen: Attribute to get the maximum length of the deque (if bounded).
+
