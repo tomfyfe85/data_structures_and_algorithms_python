@@ -66,6 +66,14 @@ class LinkedList:
 			current = current.next
 		print("false")
 		return False
+	#
+	# def reverse(self):
+	#
+	# 	current = self.first
+	#
+	# 	while current:
+
+
 
 	def	index_of(self, item):
 		current = self.first
@@ -78,20 +86,6 @@ class LinkedList:
 
 		print("item not found")
 
-	def reverse(self):
-
-		current = self.first
-		prev = None
-
-		while current is not None:
-			next_node = current.next
-			current.next = prev
-			prev = current
-			current = next_node
-
-		self.last = self.first
-		print(self.last.next)
-		self.first = prev
 
 	def show_list(self):
 		result = []
@@ -115,4 +109,21 @@ ll.add_last(30)
 ll.add_last(40)
 ll.add_last(50)
 
-print(ll.get_kth_from_the_end(1))
+print(ll.show_list())
+
+# print(ll.get_kth_from_the_end(1))
+
+# def reverse(self):
+#
+# 	current = self.first
+# 	prev = None
+#
+# 	while current is not None:
+# 		next_node = current.next
+# 		current.next = prev
+# 		prev = current
+# 		current = next_node
+#
+# 	self.last = self.first
+# 	print(self.last.next)
+# 	self.first = prev

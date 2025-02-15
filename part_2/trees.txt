@@ -1,0 +1,9 @@
+Trees:
+
+represent hierarachical data
+databases - use trees for indexing
+autocompletion
+compliers
+compression algorithms
+
+
